@@ -10,6 +10,7 @@ function onNavigatingTo(args) {
     vm.set("isItemVisible", false);
     page.bindingContext = vm;
 }
+exports.onNavigatingTo = onNavigatingTo;
 
 function makePostRequest(args) {
     const page = args.object.page;
@@ -37,6 +38,4 @@ function makePostRequest(args) {
         });
     // << fetch-post
 }
-
-exports.onNavigatingTo = onNavigatingTo;
 exports.makePostRequest = makePostRequest;

@@ -53,10 +53,10 @@ function onButtonTap(args) {
     }
     switch (!status) {
         case true:
-                vm.set(`${id}ResultVisible`, `Hide ${id} result`);
+            vm.set(`${id}ResultVisible`, `Hide ${id} result`);
             break;
         case false:
-                vm.set(`${id}ResultVisible`, `Show ${id} result`);
+            vm.set(`${id}ResultVisible`, `Show ${id} result`);
             break;
         default:
             break;
@@ -66,51 +66,53 @@ function onButtonTap(args) {
 
 function getStringExample(viewModel) {
     // >> get-string-code-fetch
+    // Note: fetch is a global module and can be used without an explicit import
     fetch("https://httpbin.org/get")
-    .then((response) => response.text())
-    .then((r) => {
-        viewModel.set("getStringResult", r);
-    }).catch((e) => {
-        // >> (hide)
-        console.log("Error: ");
-        console.log(e);
-        // << (hide)
-    });
+        .then((response) => response.text())
+        .then((r) => {
+            viewModel.set("getStringResult", r);
+        }).catch((e) => {
+            // >> (hide)
+            console.log("Error: ");
+            console.log(e);
+            // << (hide)
+        });
     // << get-string-code-fetch
 }
 function getJSONExample(viewModel) {
     // >> get-json-code-fetch
     fetch("https://httpbin.org/get")
-    .then((response) => response.json())
-    .then((r) => {
-        // >> (hide)
-        viewModel.set("host", r.headers.Host);
-        viewModel.set("userAgent", r.headers["User-Agent"]);
-        // << (hide)
-        viewModel.set("origin", r.origin);
-        viewModel.set("url", r.url);
-    }).catch((err) => {
-        // >> (hide)
-        console.log("Error: ");
-        console.log(err);
-        // << (hide)
-    });
+        .then((response) => response.json())
+        .then((r) => {
+            // >> (hide)
+            viewModel.set("host", r.headers.Host);
+            viewModel.set("userAgent", r.headers["User-Agent"]);
+            // << (hide)
+            viewModel.set("origin", r.origin);
+            viewModel.set("url", r.url);
+        }).catch((err) => {
+            // >> (hide)
+            console.log("Error: ");
+            console.log(err);
+            // << (hide)
+        });
     // << get-json-code-fetch
 }
 function getResponseStatusCodeExample(viewModel) {
     // >> request-status-code-fetch
-    fetch("https://httpbin.org/get").then((response) => {
-        // >> (hide)
-        console.log(response);
-        // << (hide)
-        const status = response.status;
-        viewModel.set("statusCodeResult", status);
-    }).catch((err) => {
-        // >> (hide)
-        console.log("Error: ");
-        console.log(err);
-        // << (hide)
-    });
+    fetch("https://httpbin.org/get")
+        .then((response) => {
+            // >> (hide)
+            console.log(response);
+            // << (hide)
+            const status = response.status;
+            viewModel.set("statusCodeResult", status);
+        }).catch((err) => {
+            // >> (hide)
+            console.log("Error: ");
+            console.log(err);
+            // << (hide)
+        });
     // << request-status-code-fetch
 }
 
@@ -118,39 +120,39 @@ function getResponseHeadersExample(viewModel) {
     console.log("getResponseHeadersExample");
     // >> request-response-header-fetch
     fetch("https://httpbin.org/get")
-    .then((r) => r.json())
-    .then((response) => {
-        console.log("Header");
-        console.log(response);
-        // >> (hide)
-        viewModel.set("acceptEncoding", response.headers["Accept-Encoding"]);
-        viewModel.set("userAgent", response.headers["User-Agent"]);
-        viewModel.set("host", response.headers.Host);
-        // << (hide)
-    }).catch((e) => {
-        // >> (hide)
-        console.log("Error: ");
-        console.log(e);
-        // << (hide)
-    });
+        .then((r) => r.json())
+        .then((response) => {
+            console.log("Header");
+            console.log(response);
+            // >> (hide)
+            viewModel.set("acceptEncoding", response.headers["Accept-Encoding"]);
+            viewModel.set("userAgent", response.headers["User-Agent"]);
+            viewModel.set("host", response.headers.Host);
+            // << (hide)
+        }).catch((e) => {
+            // >> (hide)
+            console.log("Error: ");
+            console.log(e);
+            // << (hide)
+        });
     // << request-response-header-fetch
 }
 
 function getResponseFormDataExample(viewModel) {
     // >> request-response-form-data
     fetch("https://httpbin.org/get")
-    .then((result) => result.formData())
-    .then((response) => {
-        // >> (hide)
-        viewModel.set("responseFormDataResult", response);
-        // << (hide)
-    })
-    .catch((e) => {
-        // >> (hide)
-        console.log("Error: ");
-        console.log(e);
-        // << (hide)
-    });
+        .then((result) => result.formData())
+        .then((response) => {
+            // >> (hide)
+            viewModel.set("responseFormDataResult", response);
+            // << (hide)
+        })
+        .catch((e) => {
+            // >> (hide)
+            console.log("Error: ");
+            console.log(e);
+            // << (hide)
+        });
     // << request-response-form-data
 }
 

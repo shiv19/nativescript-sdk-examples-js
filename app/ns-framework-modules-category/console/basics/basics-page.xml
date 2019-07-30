@@ -2,7 +2,7 @@
     <Page.actionBar>
 		<ActionBar title="Basics"/>
 	</Page.actionBar>
-    <StackLayout verticalAlignment="middle" class="page">
-        <Label text="This concept of the example is demonstrated in the code-behind!" textWrap="true" class="h3 text-center"/>
+    <StackLayout verticalAlignment="middle">
+        <Label text="This concept of the example is demonstrated in the code-behind file (`./app/console/basics/basics-page.ts`)!" textWrap="true" class="info"></Label>
     </StackLayout>
 </Page>

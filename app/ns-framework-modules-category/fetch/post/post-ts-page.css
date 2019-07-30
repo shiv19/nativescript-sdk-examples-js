@@ -1,9 +1,12 @@
-.layout{
+.layout {
     text-align: center;
 }
-Button{
-    color:white;
+
+TextField {
+    font-size: 18;
 }
-TextField{
-    font-size: 24px;
+
+.info Label {
+    color: white;
+    font-size: 18;
 }

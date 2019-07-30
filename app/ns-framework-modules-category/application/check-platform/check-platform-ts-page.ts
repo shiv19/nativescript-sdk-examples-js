@@ -8,7 +8,6 @@ export function onGridLoaded(args: EventData) {
     const grid = <GridLayout>args.object;
     const lbl = <Label>grid.getViewById("lbl");
     const iconLabel = <Label>grid.getViewById("iconLabel");
-    iconLabel.className = "fa";
     iconLabel.textAlignment = "center";
     iconLabel.verticalAlignment = "middle";
     iconLabel.fontSize = 40;
@@ -18,16 +17,14 @@ export function onGridLoaded(args: EventData) {
     // >> application-platform-ts
     if (application.android) {
         console.log("We are running on Android device!");
-        // >> (hide)
         iconLabel.text = String.fromCharCode(0xff17b);
+        iconLabel.className = "fab";
         lbl.text = "Android Applicaiton";
-        // << (hide)
     } else if (application.ios) {
         console.log("We are running on iOS device");
-        // >> (hide)
         iconLabel.text = String.fromCharCode(0xf179);
+        iconLabel.className = "fab";
         lbl.text = "iOS Applicaiton";
-        // << (hide)
     }
     // << application-platform-ts
 }

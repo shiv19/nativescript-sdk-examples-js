@@ -27,17 +27,18 @@ function onCreateFile(args) {
     const folder = documents.getFolder(vm.get("folderName") || "testFolder");
     const file = folder.getFile(`${(vm.get("fileName") || "testFile")}`.txt);
 
-    file.writeText(vm.get("fileTextContent") || "some random content")
-        .then((result) => {
-            file.readText()
-                .then((res) => {
-                    vm.set("successMessage", `Successfully saved in${file.path}`);
-                    vm.set("writtenContent", res);
-                    vm.set("isItemVisible", true);
-                });
-        }).catch((err) => {
-            console.log(err);
-        });
+    console.log(`>>>>>>>>>>>>>>> file ${file}`);
+    // file.writeText(vm.get("fileTextContent") || "some random content")
+    //     .then((result) => {
+    //         file.readText()
+    //             .then((res) => {
+    //                 vm.set("successMessage", `Successfully saved in${file.path}`);
+    //                 vm.set("writtenContent", res);
+    //                 vm.set("isItemVisible", true);
+    //             });
+    //     }).catch((err) => {
+    //         console.log(err);
+    //     });
     // << fs-create-all-code
 }
 exports.onNavigatingTo = onNavigatingTo;

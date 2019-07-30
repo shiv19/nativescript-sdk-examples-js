@@ -55,6 +55,8 @@ const navigationLinks = [
     new link("Tabs", "ns-ui-widgets-category/tabs/tabs-page")
 ];
 
+const getRootView = require("tns-core-modules/application").getRootView;
+
 function onNavigatingTo(args) {
     const page = args.object;
     const vm = new ListViewLinksModel({
@@ -62,5 +64,7 @@ function onNavigatingTo(args) {
         actionBarTitle: "Cookbook"
     });
     page.bindingContext = vm;
+
+    // getRootView().className += " ns-dark";
 }
 exports.onNavigatingTo = onNavigatingTo;

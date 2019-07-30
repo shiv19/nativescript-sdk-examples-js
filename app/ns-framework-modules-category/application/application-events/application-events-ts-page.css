@@ -1,11 +1,13 @@
 GridLayout {
     background-color: blue;
-    color: white;
+    border-radius: 20;
 }
 
 Label {
-   horizontal-align: center;
-   padding: 15;
-   text-align: center;
-   vertical-align: middle;
+    color: whitesmoke;
+    font-size: 14;
+    horizontal-align: center;
+    padding: 15;
+    text-align: center;
+    vertical-align: middle;
 }

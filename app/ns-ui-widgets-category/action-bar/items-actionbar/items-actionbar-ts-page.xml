@@ -10,6 +10,6 @@
         </ActionBar>
 	</Page.actionBar>
     <StackLayout verticalAlignment="middle"> 
-        <Label text="{{ '&#xff05a; ' + title }}" textWrap="true" class="fa"/>
+        <Label text="{{ '&#xff05a; ' + title }}" textWrap="true" class="fas"/>
     </StackLayout>
 </Page>

@@ -3,7 +3,7 @@
 	  navigatingTo="onNavigatingTo" 
 	  navigatedTo="onNavigatedTo">
     <Page.actionBar>
-		<ActionBar title="{{ actionBarTitle == null ? '' : actionBarTitle }}" icon="" class="action-bar"/>
+		<ActionBar title="{{ actionBarTitle == null ? '' : actionBarTitle }}" icon="" />
 	</Page.actionBar>
 	
 	<myList:list/>

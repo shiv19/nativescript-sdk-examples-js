@@ -4,6 +4,6 @@
 	</Page.actionBar>
 
     <StackLayout verticalAlignment="middle"> 
-        <Button text="{{ abHidden ? 'Show ActionBar' : 'Hide ActionBar' }}" tap="onTap" textWrap="true" class="fa" />
+        <Button text="{{ abHidden ? 'Show ActionBar' : 'Hide ActionBar' }}" tap="onTap" textWrap="true" class="fas" />
     </StackLayout>
 </Page>

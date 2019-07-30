@@ -2,22 +2,22 @@
     <Page.actionBar>
 		<ActionBar title="Post"/>
 	</Page.actionBar>
-    <StackLayout class="form">
-        <StackLayout class="input-field">
-            <Label class="label" text="Username" textWrap="true"/>
-            <TextField class="input input-border" hint="Enter Username" text="{{ user }}" editable="true"/>
+    <StackLayout>
+        <StackLayout class="m-20">
+            <Label text="Username" textWrap="true"></Label>
+            <TextField hint="Enter Username" text="{{ user }}" editable="true"></TextField>
         </StackLayout>
 
-        <StackLayout class="input-field">
-            <Label class="label" text="Password" textWrap="true"/>
-            <TextField class="input input-border" hint="Enter Password" text="{{ pass }}" secure="true" editable="true"/>
+        <StackLayout class="m-20">
+            <Label text="Password" textWrap="true"></Label>
+            <TextField hint="Enter Password" text="{{ pass }}" secure="true" editable="true"></TextField>
         </StackLayout>
 
-        <Button class="btn btn-primary btn-active" text="Submit" tap="makePostRequest"/>
-        <GridLayout class="bg-primary p-15 m-15" rows="*, *" columns="*" borderRadius="2">
-            <Label row="0" class="text-center p-15" text="Data successfully send by user: " visibility="{{ isItemVisible ? 'visible' : 'collapsed' }}"
-                verticalAligment="center" colSpan="2" textWrap="true"/>
-            <Label row="1" class="h1 text-center p-15" text="{{ message }}" verticalAligment="center" colSpan="2" textWrap="true"/>
+        <Button text="Submit" tap="makePostRequest"></Button>
+        <GridLayout rows="auto, auto" columns="*" borderRadius="2" class="info">
+            <Label row="0" colSpan="2" text="Data successfully send by user: " visibility="{{ isItemVisible ? 'visible' : 'collapsed' }}"
+                verticalAligment="middle" textWrap="true" textAlignment="center"></Label>
+            <Label row="1" colSpan="2" text="{{ message }}" verticalAligment="middle" textWrap="true" textAlignment="center"></Label>
         </GridLayout>
     </StackLayout>
 </Page>

@@ -4,7 +4,6 @@ function onGridLoaded(args) {
     const grid = args.object;
     const lbl = grid.getViewById("lbl");
     const iconLabel = grid.getViewById("iconLabel");
-    iconLabel.className = "fa";
     iconLabel.textAlignment = "center";
     iconLabel.verticalAlignment = "middle";
     iconLabel.fontSize = 40;
@@ -16,12 +15,14 @@ function onGridLoaded(args) {
         console.log("We are running on Android device!");
         // >> (hide)
         iconLabel.text = String.fromCharCode(0xff17b);
+        iconLabel.className = "fab";
         lbl.text = "Android Applicaiton";
         // << (hide)
     } else if (application.ios) {
         console.log("We are running on iOS device");
         // >> (hide)
         iconLabel.text = String.fromCharCode(0xf179);
+        iconLabel.className = "fab";
         lbl.text = "iOS Applicaiton";
         // << (hide)
     }
