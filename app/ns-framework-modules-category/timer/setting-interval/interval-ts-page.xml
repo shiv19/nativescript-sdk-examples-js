@@ -7,6 +7,6 @@
         <StackLayout class="stacklayoutStyle" backgroundColor="{{ buttoncolor }}">
             <Label text="{{ 'Color:' + buttoncolor }}" textWrap="true"/>
         </StackLayout>
-        <Button class="btn btn-primary btn-active" text="{{ buttonText }}" tap="onButtonTap"/>
+        <Button  text="{{ buttonText }}" tap="onButtonTap"/>
     </StackLayout>
 </Page>

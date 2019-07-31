@@ -6,11 +6,11 @@
     <GridLayout rows="*">
     <android>
         <!-- >> button-styling-xml -->
-        <Button text="&#xff17b; Tap Me!" tap="onTap" class="my-button" />
+        <Button text="&#xff17b; Tap Me!" tap="onTap" class="fab my-button" />
         <!-- << button-styling-xml -->
      </android>
      <ios>
-        <Button text="&#xf179; Tap Me!" tap="onTap" class="my-button" />
+        <Button text="&#xf179; Tap Me!" tap="onTap" class="fab my-button" />
      </ios> 
     </GridLayout>
 </Page>

@@ -13,7 +13,7 @@
             <TextField class="input input-border" hint="Enter Password" text="{{ pass }}" secure="true" editable="true"/>
         </StackLayout>
 
-        <Button class="btn btn-primary btn-active" text="Submit" tap="makePostRequest"/>
+        <Button  text="Submit" tap="makePostRequest"/>
         <GridLayout class="bg-primary p-15 m-15" rows="*, *" columns="*" borderRadius="2">
             <Label row="0" class="text-center p-15" text="Data successfully send by user: " visibility="{{ isItemVisible ? 'visible' : 'collapsed' }}"
                 verticalAligment="center" colSpan="2" textWrap="true"/>

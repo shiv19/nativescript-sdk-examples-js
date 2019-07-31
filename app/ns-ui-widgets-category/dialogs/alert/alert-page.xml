@@ -3,6 +3,6 @@
 		<ActionBar title="Alert"/>
 	</Page.actionBar>
 	    <StackLayout verticalAlignment="middle">
-        <Button text="Show Alert Dialog" tap="showAlertDialog" class="btn btn-primary btn-active"/>
+        <Button text="Show Alert Dialog" tap="showAlertDialog" />
     </StackLayout>
 </Page>

@@ -4,7 +4,7 @@
 	</Page.actionBar>
 
     <GridLayout rows="auto *" columns="*">
-        <Button row="0" class="btn btn-primary btn-active" text="Parse xml" tap="parseXMLButton"/>
+        <Button row="0"  text="Parse xml" tap="parseXMLButton"/>
         <ListView row="1" items="{{ source }}">
             <ListView.itemTemplate>
                 <GridLayout rows="auto auto auto auto auto auto auto auto auto auto auto" columns="* *">

@@ -7,19 +7,19 @@
 			<TabViewItem title="Profile">
 				<StackLayout>
 					<Label text="{{ tabSelectedIndexResult }}" class="h2 m-t-16 text-center" textWrap="true" />
-					<Button text="Change Tab" tap="changeTab" class="btn btn-primary btn-active" />
+					<Button text="Change Tab" tap="changeTab"  />
 				</StackLayout>
 			</TabViewItem>
 			<TabViewItem title="Stats">
 				<StackLayout>
 					<Label text="{{ tabSelectedIndexResult }}" class="h2 m-t-16 text-center" textWrap="true" />
-					<Button text="Change Tab" tap="changeTab" class="btn btn-primary btn-active" />
+					<Button text="Change Tab" tap="changeTab"  />
 				</StackLayout>
 			</TabViewItem>
 			<TabViewItem title="Settings">
 				<StackLayout>
 					<Label text="{{ tabSelectedIndexResult }}" class="h2 m-t-16 text-center" textWrap="true" />
-					<Button text="Change Tab" tap="changeTab" class="btn btn-primary btn-active" />
+					<Button text="Change Tab" tap="changeTab"  />
 				</StackLayout>
 			</TabViewItem>
 		</TabView>

@@ -4,8 +4,8 @@
 	</Page.actionBar>
     <!-- >> animation-properties-width-height-xml -->
 	<GridLayout rows="auto, auto, *">
-		<Button row="0" text="Animate height" tap="animateHeight" class="btn btn-primary btn-active" width="80%"/>
-        <Button row="1" text="Animate width" tap="animateWidth" class="btn btn-primary btn-active" width="80%"/>
+		<Button row="0" text="Animate height" tap="animateHeight"  width="80%"/>
+        <Button row="1" text="Animate width" tap="animateWidth"  width="80%"/>
 		<Label row="2" id="lbl" text="NativeScript" textWrap="true" marginTop="50"/>
 	</GridLayout>
     <!-- << animation-properties-width-height-xml -->

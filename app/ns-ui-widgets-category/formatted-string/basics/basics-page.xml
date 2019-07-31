@@ -33,7 +33,7 @@
     </TextView>
     <!-- << formatted-string-textview-xml -->
     <!-- >> formatted-string-button-xml -->
-    <Button class="btn btn-primary btn-active">
+    <Button >
         <FormattedString>
             <Span text="Formatted "></Span>
             <Span text="String " ></Span>

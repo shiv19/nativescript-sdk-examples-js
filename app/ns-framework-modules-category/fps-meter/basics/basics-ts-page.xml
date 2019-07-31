@@ -10,6 +10,6 @@
             <Label class="p-15" row="1" col="0" text="minFPS" textWrap="true"/>
             <Label class="p-15" row="1" col="1" text="{{ minfps }}"/>
         </GridLayout>
-        <Button class="btn btn-primary btn-active" text="{{ fpslabeltitle }}" tap="toogleMeter"/>
+        <Button  text="{{ fpslabeltitle }}" tap="toogleMeter"/>
     </StackLayout>
 </Page>

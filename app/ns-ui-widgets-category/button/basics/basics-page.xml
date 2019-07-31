@@ -3,9 +3,9 @@
 		<ActionBar title="Getting Started"/>
 	</Page.actionBar>
 
-    <StackLayout verticalAlignment="middle">
+    <StackLayout verticalAlignment="middle" class="m-20">
         <!-- >> button-xml -->
-        <Button text="Tap Me!" tap="onTap" class="btn btn-primary btn-active" />
+        <Button text="Tap Me!" tap="onTap" class="text-center" />
         <!-- << button-xml -->
     </StackLayout>
 </Page>

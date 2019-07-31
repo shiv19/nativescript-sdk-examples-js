@@ -8,10 +8,10 @@
                 <Label class="p-t-15 p-l-15 p-r-15" text="{{ 'Created folder: ' + myFolderPath }}" textWrap="true"/>
                 <Label class="p-t-15 p-l-15 p-r-15" text="{{ 'Created file: ' + myFilePath }}" textWrap="true"/>
                 <StackLayout>
-                    <Button class="btn btn-primary btn-active" text="Delete File" tap="onDeleteFile" textWrap="true"/>
-                    <Button class="btn btn-primary btn-active" text="Delete Folder" tap="onDeleteFolder" textWrap="true"/>
-                    <Button class="btn btn-primary btn-active" text="Clear Folder" tap="onClearFolder" textWrap="true"/>
-                    <Button class="btn btn-primary btn-active" text="Reset" tap="onReset" textWrap="true"/>
+                    <Button  text="Delete File" tap="onDeleteFile" textWrap="true"/>
+                    <Button  text="Delete Folder" tap="onDeleteFolder" textWrap="true"/>
+                    <Button  text="Clear Folder" tap="onClearFolder" textWrap="true"/>
+                    <Button  text="Reset" tap="onReset" textWrap="true"/>
                 </StackLayout> 
                 <Label class="p-b-15 p-l-15 font-weight-bold" text="{{ resultMessage }}" textWrap="true"/>
             </StackLayout>

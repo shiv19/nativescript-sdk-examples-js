@@ -3,6 +3,6 @@
 		<ActionBar title="Prompt"/>
 	</Page.actionBar>
 	    <StackLayout verticalAlignment="middle">
-        <Button text="Show Prompt Dialog" tap="showPromptDialog" class="btn btn-primary btn-active"/>
+        <Button text="Show Prompt Dialog" tap="showPromptDialog" />
     </StackLayout>
 </Page>

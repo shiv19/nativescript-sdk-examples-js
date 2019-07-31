@@ -13,6 +13,6 @@
     <!-- << action-bar-custom-title-view-xml -->
 
     <StackLayout verticalAlignment="middle"> 
-        <Label text="{{ '&#xff05a; ' + title }}" class="fa labelClass" textWrap="true"/>
+        <Label text="{{ '&#xff05a; ' + title }}" class="fas info" textWrap="true"/>
     </StackLayout>
 </Page>

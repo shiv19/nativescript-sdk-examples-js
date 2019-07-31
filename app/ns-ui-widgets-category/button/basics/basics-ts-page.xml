@@ -4,6 +4,6 @@
 	</Page.actionBar>
 
     <StackLayout verticalAlignment="middle">
-        <Button text="Tap Me!" tap="onTap" class="btn btn-primary btn-active" />
+        <Button text="Tap Me!" tap="onTap"  />
     </StackLayout>
 </Page>

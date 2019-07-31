@@ -13,6 +13,6 @@
     <!-- << items-actionbar-xml -->
 
     <StackLayout verticalAlignment="middle"> 
-        <Label text="{{ '&#xff05a; ' + title }}" textWrap="true" class="fas"/>
+        <Label text="{{ '&#xff05a; ' + title }}" textWrap="true" class="fas info"/>
     </StackLayout>
 </Page>

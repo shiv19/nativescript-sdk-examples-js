@@ -3,6 +3,6 @@
 		<ActionBar title="Login"/>
 	</Page.actionBar>
 	    <StackLayout verticalAlignment="middle">
-        <Button text="Show Login Dialog" tap="showLoginDialog" class="btn btn-primary btn-active"/>
+        <Button text="Show Login Dialog" tap="showLoginDialog" />
     </StackLayout>
 </Page>

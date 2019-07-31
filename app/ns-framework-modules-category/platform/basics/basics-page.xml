@@ -6,7 +6,7 @@
     <!-- >> platform-creating-timepicker-xml -->
 <ScrollView orientation="vertical">
     <StackLayout orientation="vertical">
-        <Button text="Check platform type" class="btn btn-primary btn-active" tap="checkPlatformType"/>
+        <Button text="Check platform type"  tap="checkPlatformType"/>
         <Button text="{{ deviceInfoButton }}" class="btn btn-outline btn-active" tap="deviceInfo"/>
         <GridLayout rows="auto, auto, auto, auto, auto, auto, auto, auto" columns="auto auto" visibility="{{ isItemVisible ? 'visible' : 'collapsed' }}">
             <Label class="m-15" col="0" row="0" text="Device model: " textWrap="true"/>

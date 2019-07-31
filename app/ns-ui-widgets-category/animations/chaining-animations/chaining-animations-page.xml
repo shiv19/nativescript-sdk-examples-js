@@ -1,8 +1,8 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded">
 	<Page.actionBar>
-		<ActionBar title="Chaining Animations" />
+		<ActionBar title="Chaining Animations"></ActionBar>
 	</Page.actionBar>
-	<GridLayout rows="*">
-		<Label row="0" id="lbl" text="NativeScript" textWrap="true" />
+	<GridLayout rows="*" tap="onTap">
+		<Label row="0" id="lbl" text="NativeScript" textWrap="true" class="h2 info" verticalAlignment="middle" horizontalAlignment="center"></Label>
 	</GridLayout>
 </Page>
