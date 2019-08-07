@@ -10,7 +10,6 @@ const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const { NativeScriptWorkerPlugin } = require("nativescript-worker-loader/NativeScriptWorkerPlugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const hashSalt = Date.now().toString();
-const WriteFilePlugin = require("write-file-webpack-plugin");
 
 module.exports = (env) => {
     // Add your custom Activities, Services and other Android app components here.
@@ -65,7 +64,7 @@ module.exports = (env) => {
         entries["tns_modules/tns-core-modules/inspector_modules"] = "inspector_modules";
     }
 
-    let sourceMapFilename = nsWebpack.getSourceMapFilename(hiddenSourceMap, __dirname, dist);
+    const sourceMapFilename = nsWebpack.getSourceMapFilename(hiddenSourceMap, __dirname, dist);
 
     const itemsToClean = [`${dist}/**/*`];
     if (platform === "android") {
@@ -260,9 +259,11 @@ options: { url: false } },
                 async: false,
                 useTypescriptIncrementalApi: true,
                 memoryLimit: 4096
-            }),
-            new WriteFilePlugin()
-        ]
+            })
+        ],
+        devServer: { // https://webpack.js.org/configuration/dev-server/#devserverwritetodisk-
+            writeToDisk: true
+        }
     };
 
     if (report) {
