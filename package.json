@@ -40,7 +40,8 @@
     "tar.gz": "^1.0.7",
     "tns-platform-declarations": "6.0.1",
     "tslint": "5.11.0",
-    "typescript": "3.4.5"
+    "typescript": "3.4.5",
+    "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
     "lint": "eslint \"app/**/*.js\"",
@@ -55,6 +56,7 @@
     "prebuild": "npm run lint",
     "postbuild": "npm run inject && npm run archive",
     "e2e": "mocha --opts ./e2e/config/mocha.opts",
-    "update-webpack": "./node_modules/.bin/update-ns-webpack --deps --configs"
+    "update-webpack": "./node_modules/.bin/update-ns-webpack --deps --configs",
+    "dev-server": "./node_modules/.bin/webpack-dev-server --env.android"
   }
 }
