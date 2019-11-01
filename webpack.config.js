@@ -29,7 +29,7 @@ module.exports = (env) => {
     // Default destination inside platforms/<platform>/...
     const dist = resolve(projectRoot, nsWebpack.getAppPath(platform, projectRoot));
 
-    const {
+    let {
         // The 'appPath' and 'appResourcesPath' values are fetched from
         // the nsconfig.json configuration file
         // when bundling with `tns run android|ios --bundle`.
@@ -47,6 +47,10 @@ module.exports = (env) => {
         unitTesting, // --env.unitTesting,
         verbose // --env.verbose
     } = env;
+
+    hmr = false;
+    android = true;
+    sourceMap = true;
     const isAnySourceMapEnabled = !!sourceMap || !!hiddenSourceMap;
     const externals = nsWebpack.getConvertedExternals(env.externals);
 
